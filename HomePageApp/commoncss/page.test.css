@@ -1,0 +1,48 @@
+#pageheader{
+  /* background-color: #FAF4F4; */
+}
+#pagenav{
+  background-color: #9E3372;
+}
+#pagenavsm{
+  background-color: #0525DA;
+}
+#pagebody{
+  background-color: #F3D110;
+}
+#pagebodymain{
+  height: 800px;
+  background-color: #709E33;
+}
+#pagebodyside{
+  height: 800px;
+  background-color: #339E63;
+}
+#pagefooter{
+  background-color: #61339E;
+}
+/* 页头 */
+/* #pageheader .page-header-logo{
+  background-color: #F5B5B5;
+} */
+#pageheader .page-header-user{
+  background-color: #F05858;
+}
+#pageheader .page-header-search{
+  background-color: #F52D2D;
+}
+
+/* 导航 */
+#pagenav>.page-nav-bar{
+  background-color: #F78BCD;
+}
+#pagenavsm>.page-navsm-bar{
+  background-color: #627AF5;
+}
+#pagenavsm>.page-navsm-bar{
+  background-color: #ABB7F1;
+}
+/* 返回最顶部 按钮 */
+#pagetotop{
+  /* background-color: #1F3285; */
+}

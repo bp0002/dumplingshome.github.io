@@ -1,0 +1,16 @@
+/*  */
+.slidermodal, .slidermodal>.content{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.slidermodal li{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.slidermodal li *{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}

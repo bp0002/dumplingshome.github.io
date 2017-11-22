@@ -1,0 +1,181 @@
+body{
+  /* position: relative; */
+  min-width: 320px;
+  width: 100%;
+  /* left: 50%;
+  transform: translate(-50%); */
+  background: rgba(131, 250, 214, 0.3);
+}
+body>*{
+  width: 100%;
+  font-size: 40px;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/* 页面主区域 */
+#pagebody{
+  position: relative;
+}
+#pagebody>*{
+  display: inline-block;
+}
+#pagebodymain{
+  width: 75%;
+}
+#pagebodyside{
+  position: absolute;
+  right: 0;
+  width: 25%;
+}
+@media screen and (max-width: 640px){
+  #pagebodymain{
+    width: 100%;
+  }
+  #pagebodyside{
+    display: none;
+  }
+}
+
+
+/* 页头布局 任意宽度视口 */
+#pageheaderreplace{
+  height: 40px;
+}
+#pageheader{
+  /* ie7 + */
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 40px;
+  min-width: 320px;
+  z-index: 99;
+  /* background: rgba(252, 67, 67, 0.68); */
+  background:hsla(0,0%,100%,.4);
+}
+#pageheader *{
+  position: relative;
+  height: 40px;
+}
+#pageheader .page-header-logo, #pageheader .page-header-logo>img{
+  position: absolute;
+  left: 0;
+  width: 160px;
+  background-color: #FAF4F4;
+}
+#pageheader .page-header-user{
+  position: absolute;
+  right: 8px;
+  width: 40px;
+}
+#pageheader .page-header-search{
+  position: absolute;
+  right: 15%;
+  width: 33%;
+}
+
+/* 导航区域 */
+#pagenav{
+  position: relative;
+  display: block;
+  height: 40px; 
+}
+#pagenavsm{
+  position: relative;
+  display: none;
+  background: rgba(27, 75, 59, 0.5);
+  height: 40px;
+  z-index: 98;
+}
+#pagefooter{
+  height: 100px;
+}
+/* 导航布局 较大视口 */
+#pagenav>*{
+  position: absolute;
+  height: 40px;
+}
+#pagenav>.page-nav-bar{
+  display: inline-block;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* 导航布局 小视口 
+  该导航只有 “导航” 内容；
+  点击之后弹出下拉 导航列表
+*/
+#pagenavsm>.page-navsm-bar{
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  top: 100%;
+  display: none;
+  border: 1px solid #242235;
+  border-top: none;
+  border-radius: 3px;
+}
+#pagenavsm>.page-navsm-bar.active{
+  display: inline-block;
+}
+/* 导航只有 “导航” 内容,撑满父容器 */
+#pagenavsm>.page-navsm-btn{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: .5em;
+  line-height: 200%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+/* 轮播 */
+#pageslider{
+  box-sizing: border-box;
+  width: 100%;
+  height: 240px;
+  padding: 0 10%;
+}
+
+@media screen and (max-width: 768px){
+  /* 导航布局 小于768px宽度布局 */
+  #pagenav{
+    display: none;
+  }
+  #pagenavsm{
+    display: block;
+  }
+  
+  /* 轮播设置 小于768px宽度布局 */
+  #pageslider{
+    height: 200px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px){
+  /* 导航布局 小于320px宽度布局 */
+  /* #pageheader{
+    position: absolute;
+  } */
+
+  /* 轮播设置 小于320px宽度布局 */
+  #pageslider{
+    height: 140px;
+  }
+}
+
+/* 返回顶部按钮 */
+#pagetotop{
+  position:fixed;
+  height:40px;
+  width:40px;
+  bottom:10px;
+  right:10px;
+  color: #eeeeee;
+  background-color:#6B5BF8;
+  cursor:pointer;
+  font-family:"FontAwesome";
+  font-size:25px;
+}
+

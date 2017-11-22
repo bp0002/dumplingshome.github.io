@@ -1,0 +1,87 @@
+body,ul,li,div,input,button,img,p,span,fieldset,h1,h2,h3,h4,h5,h6
+,header,footer{   
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+input,button,textarea{
+    outline:none;
+}
+a{
+    text-decoration: none;
+}
+li{
+	list-style: none;
+}
+img{
+    display: inline-block;
+}
+/* 按钮基类，基础样式 */
+.u-btn{
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #5ed0ba;
+}
+
+.clearfix:after{       
+    content: ".";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+.clearfix{ *zoom:1;}   
+/*这是针对于IE6的，因为IE6不支持:after伪类，这个神奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素。*/
+
+.rel-center{
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%); 
+}
+.rel-middle{
+    position: relative;
+    margin-top: 50%;
+    transform: translateY(-50%); 
+}
+.rel-center-middle{
+    position: relative;
+    margin-top: 50%;
+    transform: translateY(-50%); 
+}
+.abs-center{
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%); 
+}
+.abs-middle{
+    position: absolute;
+    margin-top: 50%;
+    transform: translateY(-50%); 
+}
+.abs-center-middle{
+    position: absolute;
+    margin-top: 50%;
+    transform: translateY(-50%); 
+}
+.g-center{
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.g-middle{
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.g-center-middle{
+    top: 50%;
+    transform: translateY(-50%); 
+}
+body{
+    background-color: #eeeeee;
+}

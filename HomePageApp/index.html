@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!--加载meta IE兼容文件-->  
+  <!--[if lt IE 9]>  
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>  
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>  
+  <![endif]--> 
+  <!--[if lt IE 9]>  
+  <script>
+    window.location.href("http://111.231.220.231:8060/pages/error/error01.html");
+  </script>  
+  <![endif]-->
+  <!-- 将IE浏览器默认的渲染方式设为电脑上所装IE浏览器的最高标准 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+  <title>Dumplings-Home</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <!-- 页面布局样式 -->
+  <link rel="stylesheet" href="commoncss/base.css">
+  <link rel="stylesheet" href="common/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="commoncss/page.css">
+  <!-- <link rel="stylesheet" href="commoncss/page.test.css"> -->
+  <!-- 导航 -->
+  <link rel="stylesheet" href="modals/navbar-modal.css">
+  <!-- 轮播sp -->
+  <link rel="stylesheet" href="modals/sliderModal.css">
+  <link rel="stylesheet" href="modals/sliderModals/sliderModal-sp.css">
+</head>
+<body ng-app="ngapp">
+  <!-- S 页头 -->
+  <!-- 浮动于顶部 -->
+  <div class="page-header" id="pageheader">
+    <div>
+      <!-- logo -->
+      <a class="page-header-logo" href="#">
+        <img src="commonres/logo.png" alt="logo">
+      </a>
+      <!-- 搜索框 -->
+      <div class="page-header-search">
+      </div>
+      <!-- 用户 -->
+      <div class="page-header-user">
+      </div>
+    </div>
+  </div>
+  <div id="pageheaderreplace">
+  </div>
+  <!-- E 页头 -->
+
+  <!-- S 导航 -->
+  <nav class="page-nav" id="pagenav">
+    <div class="page-nav-bar">
+    </div>
+  </nav>
+  <!-- E 导航 -->
+
+  <!-- S 导航-sm -->
+  <div class="page-navsm" id="pagenavsm">
+    <div class="page-navsm-bar">
+    </div>
+    <div class="page-navsm-btn">导航
+    </div>
+  </div>
+  <!-- E 导航-sm -->
+
+  <!-- S 轮播 -->
+  <div class="page-slider" id="pageslider">
+
+  </div>
+  <!-- E 轮播 -->
+  
+  <!-- S 主内容 -->
+  <div class="page-body" id="pagebody">
+      <!-- S 主栏 -->
+      <div class="page-body-main" id="pagebodymain">
+      </div>
+      <!-- E 主栏 -->
+
+      <!-- S 侧栏 -->
+      <div class="page-body-side" id="pagebodyside">   
+      </div>
+      <!-- E 侧栏 -->
+  </div>
+  <!-- E 主内容 -->
+
+  <!-- S 页尾 -->
+  <footer class="page-footer" id="pagefooter">
+  </footer>
+  <!-- E 页尾 -->
+
+  <!-- S 返回顶部按钮 -->
+  <button id="pagetotop" onclick="window.scrollTo(0,0);">&#xf062;</button>
+  <!-- E 返回顶部按钮 -->
+  
+  <!-- 导入angularjs -->
+  <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+  <!-- 导入jQuery -->
+  <script src="common/jquery-3.2.1.min.js"></script>
+
+  <!-- 加载业务js -->
+  <script src="ngapp.js"></script>
+  <script src="modals.js"></script>
+  <!-- 加载导航组件 -->
+  <script src="modals/navbar-modal.js"></script>
+
+  <!-- 加载轮播组件 -->
+  <script src="modals/sliderModal.js"></script>
+  <script src="modals/sliderModals/sliderModal-sp.js"></script>
+
+
+  <!-- 页面渲染入口 -->
+  <script src="pages/index/index.js"></script>
+</body>
+</html>

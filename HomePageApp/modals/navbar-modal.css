@@ -1,0 +1,79 @@
+/* navbarmodal 样式 */
+.navbarmodal{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.navbarmodal>li{
+  position: relative;
+  display: inline-block;
+  height: 200%;
+  top: -16px;
+  margin: 0;
+  vertical-align: top;
+}
+/* 导航项 hover .active 样式统一*/
+.navbarmodal>li:hover,.navbarmodal>li.active, 
+.navbarmodal-v>li:hover,.navbarmodal-v>li.active{
+  background: rgba(10, 53, 28, 0.8);
+}
+/* 导航项下a hover .active 样式统一*/
+.navbarmodal>li:hover>a,.navbarmodal>li.active>a, 
+.navbarmodal-v>li:hover>a,.navbarmodal-v>li.active>a{
+  color: #fff;
+}
+
+/* 垂直导航列表宽度为容器的100%；高度自适应 */
+.navbarmodal-v{
+  position: relative;
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  background: rgba(131, 250, 214, 0.2);
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 垂直导航项高度40 */
+.navbarmodal-v>li{
+  display: block;
+  list-style: none;
+  text-align: left;
+  height: 40px;
+  width: 100%;
+}
+/* a标签：自适应对象，文字大小为 40 * 0.3; 行高40; */
+.navbarmodal>li>a{
+  display: inline-block;
+  top: 0;
+  padding: 0 10px;
+  font: inherit;
+  font-size: .5em;
+  line-height: 200%;
+}
+.navbarmodal-v>li>a{
+  position: absolute;
+  display: block;
+  font: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: .5em;
+  line-height: 200%;
+  margin-left: 20px;
+  border-bottom: 1px solid rgba(10, 53, 28, 0.8);
+}
+.navbarmodal a:link, .navbarmodal-v a:link{
+  color: #07252E;
+}
+.navbarmodal a:visited, .navbarmodal-v a:visited{
+  color: #07252E;
+}
+.navbarmodal>li>a:hover, .navbarmodal-v>li>a:hover{
+  color: #fff;
+}
+.navbarmodal>li>a:active, .navbarmodal-v>li>a:active{
+  color: #07252E;
+}
